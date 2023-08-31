@@ -1,0 +1,81 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    color: rgb(255, 255, 32);
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#current-weather-info img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#forecast-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+#forecast-info h3 {
+    grid-column: span 5;
+    text-align: center;
+}
+
+#forecast-info div {
+    text-align: center;
+}
+
+aside {
+    width: 300px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+}
+
+#history-list li {
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #3498db;
+}
+
+#history-list li:hover {
+    text-decoration: underline;
+}
